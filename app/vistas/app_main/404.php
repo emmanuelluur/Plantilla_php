@@ -53,7 +53,7 @@ a,a:hover {
 </style>
 <body>
   <h2>ERROR 404</h2>
-  <b>:( Recurso: <?php echo $_GET['page']; ?> no encontrado</b>
+  <b>:( Recurso: <?php echo (isset($_GET['page'])) ? $_GET['page']:""; ?> no encontrado</b>
   <p>* ...</p>
   <p>* Intenta otro recurso.<b class=blink>|</b></p>
   <div class="menu">
