@@ -1,10 +1,10 @@
 <?php
-namespace modelo\database;
+namespace sql\database;
 /**
 * funciones para crear sentencia CRUD sql
 */
-require_once "../modelo/sqlModelo.php";
-use modelo\sqlModelo\ModeloSQL;
+require_once "../sql/sqlModelo.php";
+use sql\sqlModelo\ModeloSQL;
 
 class DB {
   protected $query;

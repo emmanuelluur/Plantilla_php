@@ -1,7 +1,7 @@
 <?php
-namespace modelo\sqlModelo;
+namespace sql\sqlModelo;
 
-require_once "../sql/conexion.php";
+require_once "conexion.php";
 
 use sql\conexion\Conn;
 
