@@ -3,10 +3,12 @@ namespace controlador\core;
 
 class Controller {
   private $default = 'home';
-  public function __construct(){
+  public function __construct()
+  {
     $this->setPage();
   }
-  public function setPage(){
+  public function setPage()
+  {
     if($this->getPage() == null){
       //si no se envia page
       require_once("../app/vistas/app_main/404.php");
@@ -19,8 +21,8 @@ class Controller {
     }
   }
 
-
-  public function getPage(){
+  public function getPage()
+  {
     if (!isset($_GET['page'])){
       if(file_exists("../app/vistas/{$this->default}.php")){
         die(require_once ("../app/vistas/{$this->default}.php"));
